@@ -1,0 +1,130 @@
+#wrapper {
+  margin: 30px auto;
+  background-color: #a6c4e0;
+}
+body {
+  font-family: Verdana, Arial, sans-serif;
+}
+.head {
+  background-color: #869dc7;
+  color: #00005d;
+  font-size: 150%;
+  padding: 10px 10px 10px 155px;
+  background-image: url("../images/lighthouselogo.jpg");
+  background-repeat: no-repeat;
+  height: 130px;
+}
+header h1 {
+  margin-bottom: 0;
+}
+nav {
+  color: lightblue;
+}
+
+h2 {
+  color: lightblue;
+}
+.navbar{
+    display: flex;
+}
+nav ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+nav ul li {
+  background-color: pink;
+  padding: 15px 65px 15px 33px;
+  text-align: left;
+  border-bottom: 2px white solid;
+}
+nav ul li a {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+#lighthouseimg {
+  /* float: left; */
+  width: 95px;
+  height: 115px;
+  margin: 0px 15px;
+}
+
+#mainimg {
+  width: 250px;
+  height: 410px;
+  margin: 0px 15px;
+}
+main {
+  background-color: white;
+  overflow: hidden;
+  padding: 0px 10px;
+}
+footer {
+  background-color: #869dc7;
+}
+footer p {
+  text-align: center;
+  margin: 0px;
+  padding: 12px 0px;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Tablet view styling */
+@media  (min-width: 501px) and (max-width: 800px)  {
+    .navul{
+        padding: 10px 22px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        background-color: pink;
+        padding: 20px 33px 20px 33px;
+        text-align: left;
+        border-bottom: 2px white solid;
+    }
+}
+/* Mobile view styling */
+@media  (max-width: 500px)  {
+    .navul{
+        padding: 0px;
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        background-color: #91a6d169;
+        padding: 20px 33px 20px 15px;
+        text-align: left;
+        border-bottom: 2px white solid;
+    }
+    .d-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+    header h1 {
+        margin-bottom: 0;
+        font-size: 1.9rem;
+    }
+    .head {
+        background-color: #869dc7;
+        color: #00005d;
+        padding: 10px 10px 10px 20px;
+        background-image: url(../images/lighthouselogo.jpg);
+        background-repeat: no-repeat;
+        height: 130px;
+    }
+}
